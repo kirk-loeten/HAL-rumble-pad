@@ -1,0 +1,19 @@
+
+[...]
+
+#Joypad
+#I: Bus=0003 Vendor=046d Product=c219 Version=0110
+#N: Name="Logitech Logitech Cordless RumblePad 2"
+#P: Phys=usb-0000:00:1d.1-1/input0
+#S: Sysfs=/devices/pci0000:00/0000:00:1d.1/usb3/3-1/3-1:1.0/input/input0
+#U: Uniq=
+#H: Handlers=event0 js0
+#B: PROP=0
+#B: EV=20001b
+#B: KEY=fff0000 0 0 0 0 0 0 0 0 0
+#B: ABS=30027
+#B: MSC=10
+#B: FF=1 7030000 0 0
+
+# for remote joypad
+loadusr -W hal_input -KRAL RumblePad
